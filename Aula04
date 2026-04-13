@@ -1,0 +1,55 @@
+public class ExemploInteiros {
+    public static void main(String[] args) {
+        // BYTE: Ideal para economizar memória em grandes arrays ou dados binários
+        // Exemplo: Nível de bateria de um dispositivo (0 a 100)
+        byte nivelBateria = 85;
+        System.out.println("Status da Bateria: " + nivelBateria + "%");
+
+        // SHORT: Usado quando o byte é pequeno, mas o int é exagero
+        // Exemplo: Quantidade de alunos em uma escola pequena
+        short totalAlunos = 1250;
+        System.out.println("Total de alunos matriculados: " + totalAlunos);
+
+        // INT: O "padrão" para quase tudo que envolve contagem
+        // Exemplo: Identificador (ID) de um usuário no banco de dados
+        int idUsuario = 458920;
+        System.out.println("Processando o usuário ID: " + idUsuario);
+
+        // LONG: Quando o número ultrapassa 2 bilhões
+        // Exemplo: População mundial ou distância em milissegundos (timestamp)
+        long populacaoMundial = 8000000000L; // Note o 'L' no final
+        System.out.println("População estimada da Terra: " + populacaoMundial);
+    }
+}
+
+public class ExemploDecimais {
+    public static void main(String[] args) {
+        // FLOAT: Usado em bibliotecas gráficas ou sensores (ocupa menos espaço que o double)
+        // Exemplo: Temperatura de um sensor climático
+        float temperaturaCelsius = 26.5f; // Note o 'f' no final
+        System.out.println("Temperatura atual: " + temperaturaCelsius + "°C");
+
+        // DOUBLE: O padrão para cálculos precisos e científicos
+        // Exemplo: Cálculo de área de um círculo ou coordenadas GPS
+        double latitude = -23.550520;
+        double longitude = -46.633308;
+        System.out.println("Localização de SP: Lat " + latitude + " | Long " + longitude);
+    }
+}
+
+public class SistemaVendas {
+    public static void main(String[] args) {
+        // Dados do Produto
+        int codProduto = 10245;
+        byte quantidadeComprada = 3;
+        double precoUnitario = 49.90;
+        
+        // Cálculo (int * double resulta em double automaticamente)
+        double valorTotal = precoUnitario * quantidadeComprada;
+        
+        System.out.println("--- Cupom Fiscal ---");
+        System.out.println("Produto: #" + codProduto);
+        System.out.println("Quantidade: " + quantidadeComprada);
+        System.out.println("Total a pagar: R$ " + valorTotal);
+    }
+}

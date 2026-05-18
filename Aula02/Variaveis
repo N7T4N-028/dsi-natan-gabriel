@@ -1,0 +1,25 @@
+package Aula02;
+
+public class Variaveis {
+
+    public static void main(String[] args) {
+
+        // Declaração de duas mensagens
+        String primeiraMensagem = "Olá ";
+        String segundaMensagem = "Alunos";
+
+        // Junta as duas mensagens
+        System.out.println(primeiraMensagem.concat(segundaMensagem));
+
+        // Exemplo de soma entre número inteiro e texto convertido
+        int numeroInteiro = 1;
+        String numeroTexto = "2";
+
+        // Conversão da String para inteiro
+        int numeroConvertido = Integer.parseInt(numeroTexto);
+
+        // Soma dos valores
+        System.out.println(numeroInteiro + numeroConvertido);
+
+    }
+}

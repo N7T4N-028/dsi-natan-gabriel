@@ -27,6 +27,7 @@ Aula04/
 Aula05/
 Aula06/
 Aula07/
+Exercicios/
 ```
 
 Cada pasta representa uma aula diferente, contendo exemplos práticos e explicações sobre os conteúdos estudados.
@@ -229,6 +230,10 @@ switch (dia) {
 * O `switch` facilita múltiplas condições.
 * O `break` impede que os próximos casos executem.
 * O `default` funciona como alternativa padrão.
+
+---
+
+## ✅ Exercicios - Colocando em prática o que aprendemos
 
 ---
 

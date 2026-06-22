@@ -235,6 +235,62 @@ switch (dia) {
 
 ## ✅ Exercicios - Colocando em prática o que aprendemos
 
+### ✅ Exercício 01 – Cálculo de Salário de Funcionário
+
+### Objetivo do código:
+Criar um programa para calcular o salário líquido de um funcionário, considerando descontos, benefícios e adicionais.
+
+### Como foi desenvolvido:
+* Foi utilizada a classe `Scanner` para receber os dados digitados pelo usuário.
+* O tipo `String` foi utilizado para armazenar o nome do funcionário.
+* O tipo `double` foi utilizado para armazenar valores monetários e horas trabalhadas.
+* O tipo `int` foi utilizado para armazenar idade, quantidade de filhos e tempo de serviço.
+* O programa calcula o salário bruto multiplicando as horas trabalhadas pelo valor da hora.
+* Em seguida, calcula os descontos de INSS e Imposto de Renda.
+* Também calcula benefícios como salário-família e adicionais por idade ou tempo de serviço.
+* Por fim, exibe o salário líquido do funcionário.
+
+### Conclusão:
+O objetivo foi alcançado com sucesso, permitindo calcular automaticamente o salário líquido do funcionário com base nas informações fornecidas.
+
+### ✅ Exercício 02 – Cálculo de Bônus de Natal
+
+### Objetivo do código:
+Desenvolver um programa capaz de calcular o bônus de Natal de um funcionário conforme seu sexo, tempo de trabalho e salário.
+
+### Como foi desenvolvido:
+
+* Foi utilizada a classe `Scanner` para a entrada de dados.
+* O tipo `int` foi utilizado para armazenar o código do funcionário e o tempo de trabalho.
+* O tipo `char` foi utilizado para armazenar o sexo do funcionário.
+* O tipo `double` foi utilizado para armazenar o salário e o valor do bônus.
+* O programa utiliza estruturas condicionais (`if` e `else`) para definir o valor do bônus.
+* Dependendo das condições informadas, o bônus é calculado por porcentagem do salário ou recebe um valor fixo.
+
+### Conclusão:
+O programa conseguiu calcular corretamente o bônus de Natal de acordo com as regras estabelecidas, apresentando o resultado ao usuário.
+
+### ✅ Exercício 03 – Classificação de Triângulos
+
+### Objetivo do código:
+Criar um programa que receba três lados e identifique se eles formam um triângulo e qual é sua classificação.
+
+### Como foi desenvolvido:
+* Foi utilizada a classe `Scanner` para receber os valores dos lados.
+* O tipo `double` foi utilizado para armazenar as medidas dos lados.
+* O programa primeiro organiza os lados em ordem decrescente para facilitar os cálculos.
+* Em seguida, verifica se os valores formam um triângulo.
+* Caso formem, utiliza estruturas condicionais para identificar se o triângulo é:
+* Retângulo;
+* Obtusângulo;
+* Acutângulo;
+* Equilátero;
+* Isósceles.
+* Os resultados são exibidos na tela para o usuário.
+
+### Conclusão:
+O projeto foi concluído com sucesso, permitindo identificar automaticamente se três valores formam um triângulo e determinar sua classificação de acordo com suas características.
+
 ---
 
 # 🎯 Objetivos deste repositório

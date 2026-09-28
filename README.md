@@ -224,6 +224,44 @@ switch (dia) {
         System.out.println("Dia inválido");
 }
 ```
+---
+
+## ✅ Aula 08 — Serviço REST com Spring Boot
+
+### Conteúdo estudado
+
+* Spring Boot
+* Maven (`pom.xml` e `mvnw`)
+* API REST
+* `@RestController`
+* `@GetMapping`
+* `@RequestParam`
+* `record`
+
+### Exemplo
+
+```java
+@GetMapping("/welcome")
+public Welcome welcome(@RequestParam(name = "name", defaultValue = "World") String nome) {
+
+    String mensagem = MODELO_MENSAGEM.formatted(nome);
+
+    return new Welcome(contador.incrementAndGet(), mensagem);
+
+}
+```
+
+### Anotações
+
+* `@SpringBootApplication` configura e inicia a aplicação.
+* `@RestController` faz a classe responder requisições HTTP devolvendo JSON.
+* `@GetMapping("/welcome")` liga o endereço `/welcome` ao método.
+* `@RequestParam` lê um parâmetro da URL e usa o `defaultValue` quando ele não é informado.
+* `record` cria uma classe simples de dados, e o Spring converte o objeto em JSON automaticamente.
+* `AtomicLong` gera o `id` de forma segura, mesmo com várias requisições ao mesmo tempo.
+* Para executar: `./mvnw spring-boot:run` e acessar `http://localhost:8080/welcome?name=Natan`.
+
+---
 
 ### Anotações
 
